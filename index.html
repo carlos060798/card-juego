@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="titulo">
+        juego de 21
+
+    </header>
+
+    <div class="row mt-2">
+        <div class="col text-center">
+            <button id="nuevo"class="btn btn-danger">Nuevo juego</button>
+            <button id="pedir"class="btn btn-primary">Pedir carta</button>
+            <button id="detener"class="btn btn-danger">Detener</button>
+        </div>
+
+    </div>
+    <!---JUGADOR 1-->
+    <div class="row container">
+        <div class="col">
+            <h1>jugador 1- <small>0</small></h1>
+            <div id="jugador-cartas" class="divcartas">
+                <!--img class="carta" src="assets/cartas/2C.png" alt=""---->
+            </div>
+
+        </div>
+    </div>
+    <!----------------COMPUTADORA------------------------>
+    <div class="row container mt-2">
+        <div class="col">
+            <h1>Computadora <small>0</small></h1>
+            <div id="computadora-cartas" class="divcartas">
+               
+            </div>
+
+        </div>
+    </div>
+
+
+
+  </body>  
+<script src="underscore-min.js"></script>
+<script src="juego-min.js"></script>
+<script>
+console.log(mimodulo)
+mimodulo.inicio()
+</script>
+</html>
